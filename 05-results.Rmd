@@ -12,7 +12,12 @@ data <- read_csv("data/nyts_grouped.csv", show_col_types = FALSE)
 
 ## Advertisement 
 
-It is not surprising that tobacco advertisements appears in everyday lives. One possible reason that youth start using tobacco products are because of ads
+It is not surprising that tobacco advertisements appears in everyday lives. One possible reason that youth start using tobacco products are because of ads.
+
+In order to find if the tobacco advertisements are a key element that promotes youth people smoking, we selected several questions from our data set related to the tobacco advertisements and plotted them out for further study. 
+
+Nowadays, the internet is playing a more critical role in our daily lives. Everyone has a smartphone, a super convenient tool to connect to other people and the world, in their pockets. If you walk on the street, you can see that almost everyone holds a phone no matter what they are doing. It looks like surfing online is the best way to kill time, and looking at the smartphone is the best entertainment. Accordingly, if some tobacco advertisements appear on some specific website or app frequently, this must be a fundamental reason that promotes teenagers to be curious about cigarettes and even encourages them to try some tobacco products. Thus, our first plot is about how often youth see ads on internet for cigarettes and e-cigarettes. Here is our plot.
+
 
 ```{r, fig.width=10, fig.height=7}
 
@@ -34,6 +39,13 @@ data %>%
   ggtitle("Comparison of How Often Youth See Ads on the Internet for cigarettes and e-cigarettes") + 
   theme(legend.position = "bottom")
 ```
+We first look at advertisements for traditional cigarettes or other tobacco products. For the plot, we can clearly find that from 2017 to 2020, only 20 percent of all our participants never saw advertisements about cigarettes on the internet. Besides, with time increase, more and more people are getting used to using the internet, which is shown by the “I do not use the internet” line decreased for about 5 percent from 2017 to 2020. However, with more and more people using the internet, the “Rarely seen advertisements about cigarettes” line increased for about 5 percent, which can be interpreted as, even it is rarely, more and more people are seeing cigarettes products’ advertisements through the internet nowadays. In other words, online advertisements related to cigarettes products did not be controlled or governed seriously in the past four years. 
+
+Now, we look at the advertisements about e-cigarettes, a more advanced tobacco product that became more and more popular those days. Based on the graph, we can find that back in 2016, the ‘Sometimes’ line at that year was around 0.4, which means around half of the people sometimes saw advertisements about e-cigarettes online. Although this line is decreasing in the following five years, till 2020, there are still 30 percent of people sometimes see an advertisement about e-cigarettes. This crazy number of advertisements back to 2016 mus affect many youth people and promote the popularity of e-cigarettes among teenagers. In 2017 and 2018, the number of those kinds of advertisements decreased a lot, but this trend did not last for a long time, and for 2019 and 2020, only 25 percent of people never saw e-cigarettes through the internet. 
+
+According to those two plots, we can find that online advertisements must play an essential role in promoting smoking in youth people. From 2016 to 2020, around 35 percent of people saw advertisements about cigarettes and e-cigarettes every year. This number did not decrease too much throughout the five years, which showed the poor condition of governing those online advertisements. 
+
+
 
 
 
@@ -57,6 +69,11 @@ data %>%
   ggtitle("Comparison of How Often Youth See Ads on Stores for cigarettes and e-cigarettes") + 
   theme(legend.position = "bottom")
 ```
+Stores must be an essential place in people’s daily lives, especially for teenagers. Accordingly, if there are some cigarette advertisements in stores, those ads must also affect those shopping customers. Here is our plot.
+
+Based on the plot, we can find that, for traditional cigarettes, the ads for those products are increasing from 2017 to 2020. In 2017, around 23 percent of youth customers saw ads about cigarettes. This number increased about 10 percent in 2020. The vast number of ads about cigarettes will encourage more teenagers to try smoking or use some traditional tobacco products. The condition for e-cigarettes is similar. Although the number of ads decreased a lot in 2017 and 2018, this trend did not last too long, the number of ads increased in 2019 and 2020. Overall, there around 25 percent of people saw those ads in store from 2016 to 2020. Those ads in-store contributed a lot to the promotion of smoke in youth, and it seems like nobody took it seriously and tried to control the number of those kinds of ads. 
+
+
 
 ```{r, fig.width=10, fig.height=7}
 
@@ -79,12 +96,12 @@ data %>%
   theme(legend.position = "bottom")
 ```
 
-E-cigarettes are becoming popular in recent years as they have some fruity/sweet flavor comparing to traditional tobacco. 
-We could clearly discover a trend that ads for e-cigarettes are increasing on the Internet and stores but not on TV or streaming services. The possible reason for the difference is that there are stricter control on what would be on TV than on the Internet and stores since the latter are the primary source where people gets tobacco products. 
+TV and streaming services are important ways of entertainment in people's daily lives. Thus, let us look at how the number of TV and streaming services ads changed during the five years. For traditional tobacco products and cigarettes, the number of ads is decreasing. In 2017, only around 27 percent of people never saw such ads. This number increased 20 percent in 2020. The e-cigarettes have a similar condition. Only 20 percent of people never saw ads about e-cigarettes in 2016. In 2020, around 45 percent of people never saw such ads. Overall, we can see people who work for TV or streaming services take smoking problems seriously and try to control the number of smoking-related ads, which is clearly a good signal for the youth smoking problem.
 
-Looking at the TV or streaming services plot, we can also relate the decreasing of tobacco/e-cigarettes ads to the legislation that legal age for tobacco products were raised from 18 to 21 years old in 2019. 
+In conclusion, the e-cigarette is becoming a more serious thing that people should pay attention to. These products are becoming popular in recent years as they have so many attractive features, like different flavors compared to traditional tobacco and more attractive shapes. We believe many youth people are encouraged to try those things by those noval abilities. Besides, we can clearly discover a trend that ads for e-cigarettes are increasing on the Internet and stores. The number of e-cigarettes ads is increasing those days, and nobody is trying to control the ads number.  
+The good news is that the number of ads about cigarettes and e-cigarettes decreases in TV and streaming services. We can also relate this to the legislation that the legal age for tobacco products was raised from 18 to 21 years old in 2019. 
 
-
+## Ages and Grades 
 ```{r, fig.width=10, fig.height=10}
 
 age_levels <- c("9 years old", "10 years old", "11 years old", "12 years old", "13 years old", "14 years old", 
